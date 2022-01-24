@@ -1,15 +1,16 @@
 type WelcomeProps = { //use type when we want to create app, interface when we want to create library
-    username: string,
+    username?: string, //conditional props
     month: number,
     isLogin: boolean
 }
 
 function Welcome(props: WelcomeProps) {
+    const {username = 'Anonymous'} = props 
     return <div>
         <h2>
             {
                 props.isLogin ?
-                    `Hello {props.username ? props.username : "everybody"} ! im learning React with typescript for {props.month} months`
+                    `Hello ${username} ! im learning React with typescript for ${props.month} months`
                     :
                     `Hello guest !`
             }

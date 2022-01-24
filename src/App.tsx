@@ -1,12 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import User from './components/User';
+import UserList from './components/UserList';
 import Welcome from './components/Welcome';
 
 function App() {
+  const person = {
+    firstName: 'Luice',
+    lastName: 'Wolfgang'
+  }
+
+  const personList = [
+    {
+      firstName: 'Larry',
+      lastName: 'Larson'
+    },
+    {
+      firstName: 'Kenny',
+      lastName: 'Winchester'
+    },
+    {
+      firstName: 'Harman',
+      lastName: 'Kardon'
+    }
+  ]
+
   return (
     <div className="App">
-     <Welcome username="Budiman" />
+     <Welcome username="Budiman" month={12} isLogin={false} />
+      <User name={person} />
+      <UserList nameList={personList} />
     </div>
   );
 }

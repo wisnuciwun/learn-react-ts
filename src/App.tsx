@@ -1,4 +1,6 @@
 import './App.css';
+import CustomButton from './components/CustomButton';
+import CustomInput from './components/CustomInput';
 import Heading from './components/Heading';
 import Introduce from './components/Introduce';
 import Status from './components/Status';
@@ -37,6 +39,8 @@ function App() {
         <Heading>My name is Wisnu and im going to learn more about tsx</Heading>
       </Introduce>
       <Welcome username='ok' month={12} isLogin={true} />
+      <CustomButton handleClick={(e,id) => {console.log("okok",e,9)}} />
+      <CustomInput handleChange={(e) => {console.log("okok",e);}} value='' />
     </div>
   );
 }

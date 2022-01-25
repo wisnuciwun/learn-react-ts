@@ -1,3 +1,5 @@
+import { Detail } from "types/user.types";
+
 type Userlistprops = {
     // nameList: [
     //     {
@@ -5,10 +7,11 @@ type Userlistprops = {
     //         lastName: string
     //     }
     // ]
-    nameList: {
-        firstName: string,
-        lastName: string
-    }[]
+    // nameList: {
+    //     firstName: string,
+    //     lastName: string
+    // }[]
+    nameList: Detail[]
 }
 
 function UserList(props: Userlistprops) {

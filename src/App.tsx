@@ -40,7 +40,7 @@ function App() {
         <Heading>My name is Wisnu and im going to learn more about tsx</Heading>
       </Introduce>
       <Welcome username='ok' month={12} isLogin={true} />
-      <CustomButton handleClick={(e,id) => {console.log("okok",e,9)}} />
+      <CustomButton handleClick={(e) => {console.log("okok",e,9)}} />
       <CustomInput handleChange={(e) => {console.log("okok",e);}} value='' />
       <CustomContainer styles={{ border: '5px solid green', padding: '2px' }}/>
     </div>

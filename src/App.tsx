@@ -1,12 +1,13 @@
-import './App.css';
-import CustomButton from './components/CustomButton';
-import CustomInput from './components/CustomInput';
-import Heading from './components/Heading';
-import Introduce from './components/Introduce';
-import Status from './components/Status';
-import User from './components/User';
-import UserList from './components/UserList';
-import Welcome from './components/Welcome';
+import 'App.css';
+import CustomButton from 'components/CustomButton';
+import CustomContainer from 'components/CustomContainer';
+import CustomInput from 'components/CustomInput';
+import Heading from 'components/Heading';
+import Introduce from 'components/Introduce';
+import Status from 'components/Status';
+import User from 'components/User';
+import UserList from 'components/UserList';
+import Welcome from 'components/Welcome';
 
 function App() {
   const person = {
@@ -41,6 +42,7 @@ function App() {
       <Welcome username='ok' month={12} isLogin={true} />
       <CustomButton handleClick={(e,id) => {console.log("okok",e,9)}} />
       <CustomInput handleChange={(e) => {console.log("okok",e);}} value='' />
+      <CustomContainer styles={{ border: '5px solid green', padding: '2px' }}/>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import 'App.css';
+import Square from 'components/context/Square';
+import { ThemeContextProvider } from 'components/context/ThemeContext';
 import CustomButton from 'components/CustomButton';
 import CustomContainer from 'components/CustomContainer';
 import CustomInput from 'components/CustomInput';
@@ -47,6 +49,9 @@ function App() {
       <CustomContainer styles={{ border: '5px solid green', padding: '2px' }}/>
       <UserState/>
       <Counter/>
+      <ThemeContextProvider>
+        <Square/>
+      </ThemeContextProvider>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import CustomContainer from 'components/CustomContainer';
 import CustomInput from 'components/CustomInput';
 import Heading from 'components/Heading';
 import Introduce from 'components/Introduce';
+import { UserState } from 'components/state/UserState';
 import Status from 'components/Status';
 import User from 'components/User';
 import UserList from 'components/UserList';
@@ -43,6 +44,7 @@ function App() {
       <CustomButton handleClick={(e) => {console.log("okok",e,9)}} />
       <CustomInput handleChange={(e) => {console.log("okok",e);}} value='' />
       <CustomContainer styles={{ border: '5px solid green', padding: '2px' }}/>
+      <UserState/>
     </div>
   );
 }

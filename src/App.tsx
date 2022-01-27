@@ -1,4 +1,5 @@
 import 'App.css';
+import CounterPage from 'components/class/Counter';
 import { LoginConsume } from 'components/context/Login';
 import { LoginContextProvider } from 'components/context/LoginContext';
 import Square from 'components/context/Square';
@@ -43,7 +44,7 @@ function App() {
      {/* <Welcome username="Budiman" month={12} isLogin={false} />
       <User name={person} />
       <UserList nameList={personList} /> */}
-      <Status status='failed' />
+      {/* <Status status='failed' />
       <Introduce>
         <Heading>My name is Wisnu and im going to learn more about tsx</Heading>
       </Introduce>
@@ -60,7 +61,8 @@ function App() {
         <LoginConsume/>
       </LoginContextProvider>
       <DomRef/>
-      <MutableRef/>
+      <MutableRef/> */}
+      <CounterPage message='ok'/>
     </div>
   );
 }

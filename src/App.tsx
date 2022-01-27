@@ -6,6 +6,8 @@ import { ThemeContextProvider } from 'components/context/ThemeContext';
 import CustomButton from 'components/CustomButton';
 import CustomContainer from 'components/CustomContainer';
 import CustomInput from 'components/CustomInput';
+import DomRef from 'components/effect/ref/DomRef';
+import MutableRef from 'components/effect/ref/MutableRef';
 import Heading from 'components/Heading';
 import Introduce from 'components/Introduce';
 import Counter from 'components/state/Counter';
@@ -57,6 +59,8 @@ function App() {
       <LoginContextProvider>
         <LoginConsume/>
       </LoginContextProvider>
+      <DomRef/>
+      <MutableRef/>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import 'App.css';
+import { LoginConsume } from 'components/context/Login';
+import { LoginContextProvider } from 'components/context/LoginContext';
 import Square from 'components/context/Square';
 import { ThemeContextProvider } from 'components/context/ThemeContext';
 import CustomButton from 'components/CustomButton';
@@ -52,6 +54,9 @@ function App() {
       <ThemeContextProvider>
         <Square/>
       </ThemeContextProvider>
+      <LoginContextProvider>
+        <LoginConsume/>
+      </LoginContextProvider>
     </div>
   );
 }

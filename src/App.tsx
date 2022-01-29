@@ -11,6 +11,7 @@ import CustomContainer from 'components/CustomContainer';
 import CustomInput from 'components/CustomInput';
 import DomRef from 'components/effect/ref/DomRef';
 import MutableRef from 'components/effect/ref/MutableRef';
+import { List } from 'components/generic/List';
 import Heading from 'components/Heading';
 import Introduce from 'components/Introduce';
 import Counter from 'components/state/Counter';
@@ -66,6 +67,8 @@ function App() {
       <MutableRef/> */}
       {/* <CounterPage message='ok'/> */}
       <Private isLogin={true} component={Profile} />
+      <List items={["tara","marga","jaya"]} onClick={(item) => console.log(item)} />
+      <List items={[1,2,3]} onClick={(item) => console.log(item)} />
     </div>
   );
 }

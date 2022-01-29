@@ -14,6 +14,7 @@ import MutableRef from 'components/effect/ref/MutableRef';
 import { List } from 'components/generic/List';
 import Heading from 'components/Heading';
 import Introduce from 'components/Introduce';
+import { RandomNumber } from 'components/restriction/RandomNumber';
 import Counter from 'components/state/Counter';
 import { UserState } from 'components/state/UserState';
 import Status from 'components/Status';
@@ -69,6 +70,7 @@ function App() {
       <Private isLogin={true} component={Profile} />
       <List items={["tara","marga","jaya"]} onClick={(item) => console.log(item)} />
       <List items={[1,2,3]} onClick={(item) => console.log(item)} />
+      <RandomNumber value={10} isNegative isZero/> {/*choose one isNegative or isPositive*/}
     </div>
   );
 }

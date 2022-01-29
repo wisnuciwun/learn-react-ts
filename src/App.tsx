@@ -1,4 +1,6 @@
 import 'App.css';
+import Private from 'components/auth/Private';
+import Profile from 'components/auth/Profile';
 import CounterPage from 'components/class/Counter';
 import { LoginConsume } from 'components/context/Login';
 import { LoginContextProvider } from 'components/context/LoginContext';
@@ -62,7 +64,8 @@ function App() {
       </LoginContextProvider>
       <DomRef/>
       <MutableRef/> */}
-      <CounterPage message='ok'/>
+      {/* <CounterPage message='ok'/> */}
+      <Private isLogin={true} component={Profile} />
     </div>
   );
 }

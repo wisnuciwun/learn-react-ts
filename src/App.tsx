@@ -13,6 +13,8 @@ import DomRef from 'components/effect/ref/DomRef';
 import MutableRef from 'components/effect/ref/MutableRef';
 import { List } from 'components/generic/List';
 import Heading from 'components/Heading';
+import { MyButton } from 'components/html/Button';
+import { MyInput } from 'components/html/Input';
 import Introduce from 'components/Introduce';
 import { RandomNumber } from 'components/restriction/RandomNumber';
 import Counter from 'components/state/Counter';
@@ -73,6 +75,8 @@ function App() {
       <List items={[1,2,3]} onClick={(item) => console.log(item)} />
       <RandomNumber value={10} isNegative isZero/> {/*choose one isNegative or isPositive*/}
       <Toast position='center' />
+      <MyButton variant='primary' onClick={() => console.log("Clicked")}>div</MyButton>
+      <MyInput value={1321414} ></MyInput>
     </div>
   );
 }

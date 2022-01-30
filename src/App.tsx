@@ -18,6 +18,7 @@ import { RandomNumber } from 'components/restriction/RandomNumber';
 import Counter from 'components/state/Counter';
 import { UserState } from 'components/state/UserState';
 import Status from 'components/Status';
+import Toast from 'components/templateliterals/Toast';
 import User from 'components/User';
 import UserList from 'components/UserList';
 import Welcome from 'components/Welcome';
@@ -71,6 +72,7 @@ function App() {
       <List items={["tara","marga","jaya"]} onClick={(item) => console.log(item)} />
       <List items={[1,2,3]} onClick={(item) => console.log(item)} />
       <RandomNumber value={10} isNegative isZero/> {/*choose one isNegative or isPositive*/}
+      <Toast position='center' />
     </div>
   );
 }

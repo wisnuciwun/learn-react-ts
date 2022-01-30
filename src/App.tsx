@@ -16,6 +16,7 @@ import Heading from 'components/Heading';
 import { MyButton } from 'components/html/Button';
 import { MyInput } from 'components/html/Input';
 import Introduce from 'components/Introduce';
+import { Test } from 'components/polymorphic/Test';
 import { RandomNumber } from 'components/restriction/RandomNumber';
 import Counter from 'components/state/Counter';
 import { UserState } from 'components/state/UserState';
@@ -77,6 +78,10 @@ function App() {
       <Toast position='center' />
       <MyButton variant='primary' onClick={() => console.log("Clicked")}>div</MyButton>
       <MyInput value={1321414} ></MyInput>
+      <Test as='p' size='lg' color='primary' >okokokok</Test> {/*polymorphic work as suggest on as props*/}
+      <Test as='h2' size='lg' color='primary' >okokokok</Test>
+      {/* <Test as='h2' htmlFor='gag' size='lg' color='primary' >okokokok</Test> this component is error because htmlfor is just for label */}
+      <Test as='label' htmlFor="ref1" size='lg' color='primary' >okokokok</Test>
     </div>
   );
 }
